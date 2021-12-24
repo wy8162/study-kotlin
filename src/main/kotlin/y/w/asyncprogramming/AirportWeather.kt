@@ -4,6 +4,9 @@ import com.beust.klaxon.Json
 import com.beust.klaxon.Klaxon
 import java.net.URL
 
+/**
+ * See book "Programming Kotlin"
+ */
 class Weather(@Json(name = "Temp") val temperature: Array<String>)
 
 class Airport(

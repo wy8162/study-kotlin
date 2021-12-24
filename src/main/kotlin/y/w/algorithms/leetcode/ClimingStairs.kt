@@ -1,4 +1,6 @@
-package y.w.algorithms.dp
+package y.w.algorithms.leetcode
+
+import kotlin.test.assertTrue
 
 /**
  * You are climbing a staircase. It takes n steps to reach the top.
@@ -63,34 +65,13 @@ private fun dpTable(n: Int): Int {
     return table[n]
 }
 
-/**
- * Further simplified - just need to remember last two sub-problems.
- */
-private fun dpTable2(n: Int): Int {
-    if (n == 1) return 1
-
-    var n1 = 1
-    var n2 = 2
-
-    for (i in 2..n) {
-        var nn = n1 + n2
-        n1 = n2
-        n2 = nn
-    }
-
-    return n2
-}
-
 fun main() {
-    assert(recursive(2) == 2) // Expects 2
-    assert(recursive(3) == 3) // Expects 3
+    assertTrue(recursive(2) == 2) // Expects 2
+    assertTrue(recursive(3) == 3) // Expects 3
 
-    assert(dp(2, mutableMapOf()) == 2)
-    assert(dp(3, mutableMapOf()) == 3)
+    assertTrue(dp(2, mutableMapOf()) == 2)
+    assertTrue(dp(3, mutableMapOf()) == 3)
 
-    assert(dpTable(2) == 2)
-    assert(dpTable(3) == 3)
-
-    assert(dpTable2(2) == 2)
-    assert(dpTable2(3) == 3)
+    assertTrue(dpTable(2) == 2)
+    assertTrue(dpTable(3) == 3)
 }

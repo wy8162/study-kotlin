@@ -6,6 +6,8 @@ import java.util.concurrent.Executors
 /**
  * Add "-Dkotlinx.coroutines.debug" to JVM to see more details for debug.
  *
+ * See book "Kotlin Programming: The Big Nerd Ranch Guide, 2nd Edition"
+ *
  */
 suspend fun task(taskId : Int) {
     println("Start of task${taskId} ${Thread.currentThread()}")
