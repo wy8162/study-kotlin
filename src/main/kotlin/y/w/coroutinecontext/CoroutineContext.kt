@@ -37,7 +37,7 @@ fun main() = runBlocking {
         println(throwable.message)
     }
     // Overrides - CoroutineName, Dispatchers and ExceptionHandler from Parent
-    val jobWithCustomParams = parentScope.launch(CoroutineName("New Sample CN") + coroutineContextExceptionHandler) {
+    parentScope.launch(CoroutineName("New Sample CN") + coroutineContextExceptionHandler) {
         println("JobWithCustomParams: CoroutineName ${this.coroutineContext[CoroutineName]}")
         println("JobWithCustomParams: Dispatcher [${Thread.currentThread().name}]")
         println("JobWithCustomParams: CoroutineExceptionHandler ${this.coroutineContext[CoroutineExceptionHandler]}")

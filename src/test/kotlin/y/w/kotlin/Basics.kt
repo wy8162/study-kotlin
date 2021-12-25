@@ -11,4 +11,11 @@ class Basics {
         assertThat(arrayOf(1,2,3,4)).isSorted.containsExactly(1,2,3,4)
         "yang".forEach { println(it) }
     }
+
+    @Test
+    fun t2() {
+        for (x in 'A'..'F') println(x)
+
+        for (x in 'F' downTo 'A') println(x)
+    }
 }
