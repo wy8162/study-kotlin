@@ -2,7 +2,7 @@ package y.w.kotlin.study
 
 import org.junit.*
 
-class FunctionReturnLabe {
+class FunctionReturnLabel {
     private fun printAndStop() {
         val list = listOf("a", "b", "c", "stop", "d")
         list.forEach {
