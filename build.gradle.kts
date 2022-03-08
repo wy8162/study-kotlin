@@ -17,6 +17,8 @@ dependencies {
     implementation("junit:junit:4.13.1")
     runtimeOnly("io.ktor:ktor-client-core:1.6.6")
     implementation("io.ktor:ktor-client-cio:1.6.6")
+    implementation("io.github.microutils:kotlin-logging-jvm:2.1.20")
+    implementation("ch.qos.logback:logback-classic:1.2.11")
     // For convenience purpose. It should be test scope testImplementation.
     implementation("org.jetbrains.kotlin:kotlin-test:1.5.31")
     testImplementation("org.assertj:assertj-core:3.21.0")
