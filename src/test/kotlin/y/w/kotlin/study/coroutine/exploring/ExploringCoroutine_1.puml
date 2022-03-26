@@ -1,0 +1,15 @@
+@startuml
+'https://plantuml.com/activity-diagram-beta
+
+start
+group "Main Thread"
+:main;
+fork
+  :task1;
+fork again
+  :task2;
+end fork
+:main continues;
+stop
+end group
+@enduml
