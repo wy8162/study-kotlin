@@ -1,7 +1,7 @@
 package y.w.kotlin.study.subpackage
 
-import org.junit.*
-import y.w.kotlin.study.*
+import org.junit.jupiter.api.Test
+import y.w.kotlin.study.BaseClassVisibility
 
 
 class TestVisibility {

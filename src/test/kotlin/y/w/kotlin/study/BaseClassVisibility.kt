@@ -1,6 +1,6 @@
 package y.w.kotlin.study
 
-import org.junit.*
+import org.junit.jupiter.api.Test
 
 internal open class BaseClassVisibility(
     internal var internalVar: String,

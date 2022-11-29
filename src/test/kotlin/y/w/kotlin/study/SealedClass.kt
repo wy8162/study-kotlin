@@ -1,10 +1,16 @@
 package y.w.kotlin.study
 
-import org.junit.*
+import org.junit.jupiter.api.Test
 
 sealed class BaseSealedClass(val state: String) {
-    class SubSealed1(val v: String): BaseSealedClass("1")
-    class SubSealed2(val v: String): BaseSealedClass("2")
+    class SubSealed1(val v: String) : BaseSealedClass("1")
+    class SubSealed2(val v: String) : BaseSealedClass("2")
+}
+
+sealed class IntBinaryTree {
+    object EmptyNode : IntBinaryTree()
+    class IntBinaryTreeNode(val left: IntBinaryTree, val right: IntBinaryTree, val value: Int) :
+        IntBinaryTree()
 }
 
 class TestSealed {

@@ -1,6 +1,6 @@
 package y.w.kotlin.study
 
-import org.junit.*
+import org.junit.jupiter.api.Test
 
 /**
  * Kotlin autogenerate universal methods: equals, hashCode and toString
@@ -14,16 +14,15 @@ data class Aaa2(var name: String, val postCode: Int)
 
 class DataClasses {
     @Test
-    fun t1(): Unit {
-        val a1  = Aaa("a1", 1)
+    fun t1() {
+        val a1 = Aaa("a1", 1)
         val a11 = Aaa("a1", 1)
 
         println(a1); // Aaa(name=a1, postCode=1)
 
-
-        println(a1 == a11)  // true. Like Java equals
+        println(a1 == a11) // true. Like Java equals
         println(a1 === a11) // false. Like Java ==, comparing reference
-        println(a1 === a1)  // true. Like Java ==, comparing reference
+        println(a1 === a1) // true. Like Java ==, comparing reference
 
         // Cloning
         val a12 = a1.copy()

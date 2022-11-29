@@ -1,7 +1,7 @@
 package y.w.kotlin.study
 
-import org.junit.*
-import kotlin.test.*
+import org.junit.jupiter.api.Test
+import kotlin.test.assertTrue
 
 // val - getter is generated
 // var - getter and setter are generated

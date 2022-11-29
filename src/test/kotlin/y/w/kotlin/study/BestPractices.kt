@@ -1,7 +1,7 @@
 package y.w.kotlin.study
 
-import mu.*
-import org.junit.*
+import mu.KotlinLogging
+import org.junit.jupiter.api.Test
 
 fun utilityFunc() : String = "world"
 

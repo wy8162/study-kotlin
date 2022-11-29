@@ -1,6 +1,6 @@
 package y.w.kotlin.study
 
-import org.junit.*
+import org.junit.jupiter.api.Test
 
 class FunctionReturnLabel {
     private fun printAndStop() {

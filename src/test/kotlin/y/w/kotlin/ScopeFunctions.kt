@@ -1,16 +1,15 @@
 package y.w.kotlin
 
-import org.assertj.core.api.Assertions.*
-import org.junit.*
-import java.nio.file.*
+import org.assertj.core.api.Assertions.assertThat
+import org.junit.jupiter.api.Test
 
 data class Car(var gas: Int, val maker: String) {
-    fun run(): Unit {
+    fun run() {
         if (gas <= 0) println("No gas, can't run")
         else println("Yeah, running...")
     }
 
-    fun carry(): Unit {}
+    fun carry() {}
 }
 
 class ScopeFunctions {
@@ -21,7 +20,7 @@ class ScopeFunctions {
      * - used to initialize an instance.
      */
     @Test
-    fun testApply(): Unit {
+    fun testApply() {
         var car = Car(0, "Honda")
 
         car.run() // It doesn't run because of empty tank.
@@ -90,7 +89,6 @@ class ScopeFunctions {
 
         println(result)
     }
-
 
     /**
      * Similar to try-with-resource. Use will safely close the closable.

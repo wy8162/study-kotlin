@@ -1,6 +1,6 @@
 package y.w.kotlin.study
 
-import org.junit.Test
+import org.junit.jupiter.api.Test
 
 class AClass(val v:String, var va: String, vs: String)
 //               |         |               |_no val and var: a parameter passed to constructor.

@@ -1,6 +1,6 @@
 package y.w.kotlin
 
-import org.junit.Test
+import org.junit.jupiter.api.Test
 
 /**
  * Pair - a tuple of two values
