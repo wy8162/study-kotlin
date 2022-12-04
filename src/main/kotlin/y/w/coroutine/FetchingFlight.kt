@@ -1,9 +1,13 @@
 package y.w.coroutine
 
-import io.ktor.client.*
-import io.ktor.client.engine.cio.*
-import io.ktor.client.request.*
-import kotlinx.coroutines.*
+import io.ktor.client.HttpClient
+import io.ktor.client.engine.cio.CIO
+import io.ktor.client.request.get
+import kotlinx.coroutines.Deferred
+import kotlinx.coroutines.async
+import kotlinx.coroutines.coroutineScope
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.runBlocking
 
 private const val BASE_URL = "http://kotlin-book.bignerdranch.com/2e"
 private const val FLIGHT_ENDPOINT = "$BASE_URL/flight"
